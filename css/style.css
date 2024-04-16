@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #CFD8DC;
+}
+body main {
+  padding: 20px;
+}
+
+.parrafo {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=style.css.map */
