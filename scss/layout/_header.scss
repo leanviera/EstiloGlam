@@ -1,0 +1,54 @@
+nav{
+    height: 60px;
+    background-color:map-get($colors , darkPrimary );
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+        
+        a{
+                height: 100%;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: map-get($colors, white );
+                    &:hover{
+                        background-color: map-get($colors, primaryColor );
+                }    
+            }  
+    };
+
+    .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+    }
+
+nav{
+    svg{
+    fill: map-get($colors, lightPrimary )
+    }; #sidebar-active{
+        display: none;
+        }; .open-sidebar-button, .close-sidebar-button{
+            display: none;
+        }
+
+}    
+.logo1{
+    display: none;
+    height: 6vh;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.logo2{
+    height: 6vh;
+    margin-right: auto;
+    margin-left: 10px;
+    
+}
+
+
+
+

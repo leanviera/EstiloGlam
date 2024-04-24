@@ -13,11 +13,110 @@ body main {
   padding: 20px;
 }
 
+nav {
+  height: 60px;
+  background-color: #455A64;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+nav a:hover {
+  background-color: #607D8B;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav svg {
+  fill: #CFD8DC;
+}
+nav #sidebar-active {
+  display: none;
+}
+nav .open-sidebar-button, nav .close-sidebar-button {
+  display: none;
+}
+
+.logo1 {
+  display: none;
+  height: 6vh;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.logo2 {
+  height: 6vh;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
 .parrafo {
   line-height: 1.5;
   margin-bottom: 20px;
   padding-bottom: 10px;
   font-size: 1.1em;
+}
+
+@media (max-width: 768px) {
+  .links-container {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 300px;
+    background-color: #455A64;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+  }
+  .logo2 {
+    display: none;
+  }
+  nav .open-sidebar-button, nav .close-sidebar-button {
+    padding: 20px;
+    display: block;
+  }
+  nav #sidebar-active:checked ~ .links-container {
+    right: 0;
+  }
+  nav #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  nav a {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  header .logo1 {
+    display: block;
+  }
+}
+@media (max-width: 320px) {
+  .links-container {
+    right: -150%;
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

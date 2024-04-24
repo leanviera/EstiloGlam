@@ -1,0 +1,48 @@
+@media (max-width: 768px){
+    .links-container{
+        flex-direction:column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: map-get($colors, darkPrimary );
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+
+        transition: 0.75s ease-out
+
+    };.logo2{
+        display: none;
+    }
+    nav{
+        .open-sidebar-button, .close-sidebar-button{
+            padding: 20px;
+            display: block;
+        }
+        #sidebar-active:checked ~ .links-container{
+            right: 0;
+        };
+        #sidebar-active:checked ~ #overlay{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9;
+        }
+        a{
+            box-sizing: border-box;
+            height: auto;
+            width: 100%;
+            padding: 20px 30px;
+            justify-content: flex-start;
+        }
+        
+    }
+    header{
+        .logo1{
+            display: block;
+        }
+    }
+}
