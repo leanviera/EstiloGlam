@@ -9,9 +9,9 @@
             flex-wrap: wrap;
             .footer-links{
                 width: 25% ;
-                padding: 0 15px;
+                // padding: 0 15px;
                 h4{
-                    font-size: 22px;
+                    font-size: 20px;
                     color: #FFFFFF;
                     margin-bottom: 25px;
                     font-weight: 500;
@@ -19,7 +19,9 @@
                     padding-bottom: 10px;
                     display: inline-block;
                 }
-                ul li a{
+                ul{
+                    padding-left: 0;
+                    li a{
                     font-size: 18px;
                     text-decoration: none;
                     color: map-get($colors, lightPrimary );
@@ -30,8 +32,10 @@
                             color: map-get($colors, white );
                             padding-left: 6px;
                         }
-                }       
+                    }       
+                }
             }   
+
         }
     }
 }

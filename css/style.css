@@ -78,16 +78,18 @@ nav .open-sidebar-button, nav .close-sidebar-button {
 }
 .footer .container .footer-row .footer-links {
   width: 25%;
-  padding: 0 15px;
 }
 .footer .container .footer-row .footer-links h4 {
-  font-size: 22px;
+  font-size: 20px;
   color: #FFFFFF;
   margin-bottom: 25px;
   font-weight: 500;
   border-bottom: 2px solid #607D8B;
   padding-bottom: 10px;
   display: inline-block;
+}
+.footer .container .footer-row .footer-links ul {
+  padding-left: 0;
 }
 .footer .container .footer-row .footer-links ul li a {
   font-size: 18px;
@@ -166,10 +168,15 @@ nav .open-sidebar-button, nav .close-sidebar-button {
   header .logo1 {
     display: block;
   }
+}
+@media (max-width: 457px) {
   .footer-row {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .footer-row .footer-links {
+  .footer-links {
     width: 100%;
     margin-bottom: 30px;
   }

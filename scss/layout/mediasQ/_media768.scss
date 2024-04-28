@@ -45,12 +45,19 @@
             display: block;
         }
     }
-    // Footer
-    .footer-row{
-        text-align: center;
-            .footer-links{
-                width: 100%;
-                margin-bottom: 30px;
-            }
-        }
+   
 };
+
+@media (max-width: 457px){
+    .footer-row {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+}
